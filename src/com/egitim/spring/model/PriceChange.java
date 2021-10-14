@@ -25,9 +25,9 @@ public class PriceChange implements IObserver {
 	@Override
 	public void update(IObserver observer, String currencyName, BigDecimal spread) {
 		if (observer.toString().equals(currencyName)) {
-			System.out.println("New spread is " + spread + " of " + observer + " on " + getNow());
+			System.out.println("New spread difference is " + spread + " of " + observer + " on " + getNow());
 		} else {
-			System.out.println("New spread is " + spread + " of " + observer + " on " + getNow());
+			System.out.println("New spread difference is " + spread + " of " + observer + " on " + getNow());
 		}
 		
 
